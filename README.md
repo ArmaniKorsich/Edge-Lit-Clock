@@ -16,8 +16,7 @@ The clock consists of 5 seperate displays chained together, with:
 * 6*
 
 panels each. Each panel has a number from 0-9 etched in the following order:  
-
-<img src="https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/Numerical.png" width="1000" title="Numerical">
+![Numerals](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/Numerals.png)
 
 The off order resembles the old Nixie tube number ordering meant to maximize visiblity of all the digits.
 
