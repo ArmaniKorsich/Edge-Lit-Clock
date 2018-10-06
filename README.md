@@ -18,7 +18,7 @@ The clock consists of 5 seperate displays chained together, with:
 panels each. Each panel has a number from 0-9 etched into it.  
 They are ordered as: 1, 7, 5, 8, 4, 3, 9, 2, 0, 6. The off order resembles the old Nixie tube number ordering meant to maximize visiblity of all the digits.
 
-*The last display has various symbols instead:*
+*The last display has various symbols instead:*  
 ![alpha Symbols](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/Alpha.png)
 
 Using the Atmega328p reading unix time from a DS32321 time-keeping IC.  
