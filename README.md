@@ -15,13 +15,11 @@ The clock consists of 5 seperate displays chained together, with:
 * 10
 * 6*
 
-panels each. Each panel has a number from 0-9 etched into it.
-
+panels each. Each panel has a number from 0-9 etched into it.  
 They are ordered as: 1, 7, 5, 8, 4, 3, 9, 2, 0, 6
 
 *The last display has various symbols instead:
 
 
-Using the Atmega328p reading unix time from a DS32321 time-keeping IC.
-
+Using the Atmega328p reading unix time from a DS32321 time-keeping IC.  
 To protect the information against power outages, the project uses a readily available DS3231 breakout board with CR2032 3.0v coin battery.
