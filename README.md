@@ -42,12 +42,12 @@ stdio: Optional, provides useful debugging information in Arduino.
 
 FastLED: A solution to controlling a large quantity of LEDs rapidly and arbitrarily.
 
-RTClib: Interfaces with the DS3231 Real Time Clock, functions for timekeeping.
+RTClib: Interfaces with the DS3231 Real Time Clock, functions for timekeeping.  
 
 ## eLite
 
 `uint8_t defineChain(uint8_t numDisplays,...);`. 
-> Inputs(NumDisplays): Number of chained displays in the system.  
+> Inputs(NumDisplays): Number of chained displays in the system.    
 
 `void defineLedPerPanel(uint8_t led,...);`. 
 > Inputs(led): How many displays there are  
@@ -61,19 +61,19 @@ RTClib: Interfaces with the DS3231 Real Time Clock, functions for timekeeping.
 > Resets the numercal order of panels in a given display to 0, 1, 2, ... , n. 
 
 `void redefinePanelOrder(uint8_t displayToConfigure, uint8_t quantityPanels,...);`. 
-> Inputs(displayToConfigure): Which display to configure  
-> Inputs(QuantityPanels): Quantity of panels in display 'DisplayToConfigure'  
-> Inputs(,...): The custom order of panels in the display, expects 'QuantityPanels' items, seperated by commas. 
+> Inputs(displayToConfigure): Which display to configure   
+> Inputs(QuantityPanels): Quantity of panels in display 'DisplayToConfigure'   
+> Inputs(,...): The custom order of panels in the display, expects 'QuantityPanels' items, seperated by commas.  
 
 `void drawPanel(uint8_t r, uint8_t g, uint8_t b, uint8_t displayCount, int panelToDraw);`. 
-> Inputs(R, G, B): 8-bit integer (0-255), sets the primary color of the displays.    
-> Inputs(displayCount): Which display to draw to. 
-> Inputs(panelToDraw): The panel to activate in color ##RRGGBB  
+> Inputs(R, G, B): 8-bit integer (0-255), sets the primary color of the displays.     
+> Inputs(displayCount): Which display to draw to.  
+> Inputs(panelToDraw): The panel to activate in color ##RRGGBB   
 
 `void drawChain(uint8_t r, uint8_t g, uint8_t b, uint8_t lengthOfChain,...);`. 
 > Inputs(R, G< B): 8-bit integer (0-255), sets the primary color of the displays.  
-> Inputs(lengthOfChain): Number of displays to activate in the chain (0-indexed). 
-> inputs(,...): The panel number to activate in each display, seperated by commas.  
+> Inputs(lengthOfChain): Number of displays to activate in the chain (0-indexed).  
+> inputs(,...): The panel number to activate in each display, seperated by commas.   
  
  
 `void cycleDisplays(int delayTime, int acceleration, bool direc, uint8_t r, uint8_t g, uint8_t b, uint8_t qtyToCycle,...);`. 
