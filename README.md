@@ -29,3 +29,10 @@ To protect the information against power outages, the project uses a readily ava
 ## Circuitry
 
 ![Front Render](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/Schematic.png)
+
+## Source
+
+This projects takes advantage of Arduino's public library system, using 
+<stdio>, <fastled>, <ResponsiveAnalaogRead>, <EEPROM>, <Wire>, <RTCLib>
+and the provided eLite library for controlling the displays.
+  
