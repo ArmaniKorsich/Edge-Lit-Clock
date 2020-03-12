@@ -46,10 +46,11 @@ RTClib: Interfaces with the DS3231 Real Time Clock, functions for timekeeping.
 
 ## eLite Library
 
-The eLite library represents the bulk of the ontent of this project, the clock and physical shape of the project are an example applying this library.  
+The eLite library represents the bulk of the content of this project, the clock and physical shape of the project are an example applying this library as my entry to Eisenhower Senior High School's 'Yearly Engineering and Innovation Design Scholarship.'    
 
 `uint8_t defineChain(uint8_t numDisplays,...);`. 
 > Inputs(NumDisplays): Number of chained displays in the system.    
+> return(chainLength): returns the number of displays in the system.
 
 `void defineLedPerPanel(uint8_t led,...);`. 
 > Inputs(led): How many displays there are  
@@ -86,5 +87,25 @@ The eLite library represents the bulk of the ontent of this project, the clock a
 > Inputs(qtyToCycle): Number of displays in the chain to cycle through.   
 > Inputs(,...): The index of the displays you wish to cycle through.  
 > In a chain of 5 displays, if we wish to cycle the 1st, 3rd, and 4th display:  
-`void cycleDisplays(delay, acceleration, forward, R, G, B, 3, 0, 2, 3)`. 
+`void cycleDisplays(delay, acceleration, forward, R, G, B, 3, 0, 2, 3)`.
+
+`void clearDisplay(uint8_t displayToClear);`
+> Inputs(displayToClear): Which display to clear, all panels will be deactivated.  
+
+`void clearChain();`
+> Turns off all LEDs in the system, clears all displays.
+
+`uint8_t setChainBrightness(uint8_t brightness);`
+> Inputs(brightness): 8-bit integer (0-255), sets the overall opacity (brightness) of the LEDs in FastLED.
+> return(brightnessLevel): returns the brightness of the LEDs.
+
+`void randomizeDisplays(int delayTime, int acceleration, int iterations, uint8_t r, uint8_t g, uint8_t b, uint8_t qtyToRandomize, ...);`
+> Inputs(delayTime): Pause between iterations in milliseconds (mS).    
+> Inputs(acceleration): Time to decrease delayTime by after each iteration. (mS).   
+> Inputs(iterations): How many times to activate a random panel on the given displays.   
+> Inputs(R, G, B): 8-bit integer (0-255), sets the primary color of the displays.   
+> Inputs(qtyToRandomize): Number of displays in the chain to randomize.
+> Inputs(,...): The index of the displays you wish to randomize.
+> If iterations is 1, delay and acceleration aren't important, as the given displays will simply output a random panel. Otherwise, this function provides a simple animation to your chain.  
+
 
