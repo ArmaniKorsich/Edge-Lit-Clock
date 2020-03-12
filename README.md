@@ -44,7 +44,9 @@ FastLED: A solution to controlling a large quantity of LEDs rapidly and arbitrar
 
 RTClib: Interfaces with the DS3231 Real Time Clock, functions for timekeeping.  
 
-## eLite
+## eLite Library
+
+The eLite library represents the bulk of the ontent of this project, the clock and physical shape of the project are an example applying this library.  
 
 `uint8_t defineChain(uint8_t numDisplays,...);`. 
 > Inputs(NumDisplays): Number of chained displays in the system.    
