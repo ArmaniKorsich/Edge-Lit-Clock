@@ -61,15 +61,15 @@ RTClib: Interfaces with the DS3231 Real Time Clock, functions for timekeeping.
 > Resets the numercal order of panels in a given display to 0, 1, 2, ... , n. 
 
 `void redefinePanelOrder(uint8_t displayToConfigure, uint8_t quantityPanels,...);`. 
-> Inputs(displayToConfigure): Which display to configure. 
-> Inputs(QuantityPanels): Quantity of panels in display 'DisplayToConfigure'. 
-> Inputs(,...): The custom order of panels in the display, expects 'QuantityPanels' items, seperated by commas.  
+> Inputs(displayToConfigure): Which display to configure  
+> Inputs(QuantityPanels): Quantity of panels in display 'DisplayToConfigure'  
+> Inputs(,...): The custom order of panels in the display, expects 'QuantityPanels' items, seperated by commas. 
 
 `void drawPanel(uint8_t r, uint8_t g, uint8_t b, uint8_t displayCount, int panelToDraw);`. 
-> Inputs(R, G, B): 8-bit integer (0-255), sets the primary color of the displays.  
-> Inputs(displayCount): Which display to draw to.  
-> Inputs(panelToDraw): The panel to activate in color ##RRGGBB. 
- 
+> Inputs(R, G, B): 8-bit integer (0-255), sets the primary color of the displays.    
+> Inputs(displayCount): Which display to draw to. 
+> Inputs(panelToDraw): The panel to activate in color ##RRGGBB  
+
 `void drawChain(uint8_t r, uint8_t g, uint8_t b, uint8_t lengthOfChain,...);`. 
 > Inputs(R, G< B): 8-bit integer (0-255), sets the primary color of the displays.  
 > Inputs(lengthOfChain): Number of displays to activate in the chain (0-indexed). 
@@ -77,11 +77,11 @@ RTClib: Interfaces with the DS3231 Real Time Clock, functions for timekeeping.
  
  
 `void cycleDisplays(int delayTime, int acceleration, bool direc, uint8_t r, uint8_t g, uint8_t b, uint8_t qtyToCycle,...);`. 
-> Inputs(delayTime): Pause between advancing the panels (mS). 
-> Inputs(acceleration): Time to decrese delayTime by after each iteration. (mS). 
-> Inputs(direc): Cycles forwards (1) or backwards (0). 
-> Inputs(R, G, B): 8-bit integer (0-255), sets the primary color of the displays.  
-> Inputs(qtyToCycle): Number of displays in the chain to cycle through.  
+> Inputs(delayTime): Pause between advancing the panels (mS).  
+> Inputs(acceleration): Time to decrese delayTime by after each iteration. (mS).  
+> Inputs(direc): Cycles forwards (1) or backwards (0).   
+> Inputs(R, G, B): 8-bit integer (0-255), sets the primary color of the displays.   
+> Inputs(qtyToCycle): Number of displays in the chain to cycle through.   
 > Inputs(,...): The index of the displays you wish to cycle through.  
 > In a chain of 5 displays, if we wish to cycle the 1st, 3rd, and 4th display:  
 `void cycleDisplays(delay, acceleration, forward, R, G, B, 3, 0, 2, 3)`. 
