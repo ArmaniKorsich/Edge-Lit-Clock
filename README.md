@@ -20,7 +20,7 @@ panels each. Each panel has a number from 0-9 etched in the following order:
 
 The off order resembles the old Nixie tube number ordering meant to maximize visiblity of all the digits.
 
-*The last display has various symbols instead:*  
+* The last display has various symbols instead:*  
 ![alpha Symbols](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/AlphaChar.png)
 
 Using the Atmega328p reading unix time from a DS32321 time-keeping IC.  
