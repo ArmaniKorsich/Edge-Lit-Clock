@@ -46,26 +46,25 @@ RTClib: Interfaces with the DS3231 Real Time Clock, functions for timekeeping.
 
 ## eLite
 
-`uint8_t defineChain(uint8_t numDisplays,...);`
-> Inputs(NumDisplays): Number of chained displays in the system.
+`uint8_t defineChain(uint8_t numDisplays,...);`. 
+> Inputs(NumDisplays): Number of chained displays in the system.  
 
-`void defineLedPerPanel(uint8_t led,...);`
-> Inputs(led): How many displays there are
-> Inputs(,...): The number of leds per panel in a display, seperated by commas.
-> Tells the system how many LEDs each display has. Useful with physically large plexiglass panels that need more lighting.
-> For a system with 5 displays and 2 leds per panel on each display:
-`void defineLedPerPanel(5, 2, 2, 2, 2, 2)`
+`void defineLedPerPanel(uint8_t led,...);`. 
+> Inputs(led): How many displays there are  
+> Inputs(,...): The number of leds per panel in a display, seperated by commas.  
+> Tells the system how many LEDs each display has. Useful with physically large plexiglass panels that need more lighting.  
+> For a system with 5 displays and 2 leds per panel on each display:  
+`void defineLedPerPanel(5, 2, 2, 2, 2, 2)`. 
 
-`void setStandardOrder(uint8_t displayToConfigure);`
+`void setStandardOrder(uint8_t displayToConfigure);`. 
 
-inputs(displayToConfigure): Which display to configure
-Resets the numercal order of panels in a given display to 0, 1, 2, ... , n
+inputs(displayToConfigure): Which display to configure. 
+Resets the numercal order of panels in a given display to 0, 1, 2, ... , n. 
 
-`void redefinePanelOrder(uint8_t displayToConfigure, uint8_t quantityPanels,...);`
-
-Inputs(displayToConfigure): Which display to configure
-Inputs(QuantityPanels): Quantity of panels in display 'DisplayToConfigure'
-Inputs(,...): The custom order of panels in the display, expects 'QuantityPanels' items, seperated by commas.
+`void redefinePanelOrder(uint8_t displayToConfigure, uint8_t quantityPanels,...);`. 
+Inputs(displayToConfigure): Which display to configure. 
+Inputs(QuantityPanels): Quantity of panels in display 'DisplayToConfigure'. 
+Inputs(,...): The custom order of panels in the display, expects 'QuantityPanels' items, seperated by commas.  
 
 `void drawPanel(uint8_t r, uint8_t g, uint8_t b, uint8_t displayCount, int panelToDraw);`
 
