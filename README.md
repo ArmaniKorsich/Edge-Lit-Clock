@@ -46,7 +46,7 @@ RTClib: Interfaces with the DS3231 Real Time Clock, functions for timekeeping.
 
 ## eLite
 
-uint8_t defineChain(uint8_t numDisplays,...);
+`uint8_t defineChain(uint8_t numDisplays,...);`
 Inputs(NumDisplays): Number of chained displays in the system.
 
 void defineLedPerPanel(uint8_t led,...);
