@@ -28,4 +28,4 @@ To protect the information against power outages, the project uses a readily ava
 
 ## Circuitry
 
-![Front Render](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/Schemtic.png)
+![Front Render](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/Schematic.png)
