@@ -102,10 +102,10 @@ The eLite library represents the bulk of the content of this project, the clock 
 `void randomizeDisplays(int delayTime, int acceleration, int iterations, uint8_t r, uint8_t g, uint8_t b, uint8_t qtyToRandomize, ...);`
 > Inputs(delayTime): Pause between iterations in milliseconds (mS).    
 > Inputs(acceleration): Time to decrease delayTime by after each iteration. (mS).   
-> Inputs(iterations): How many times to activate a random panel on the given displays.   
+> Inputs(iterations): How many times to activate a random panel on the given displays.    
 > Inputs(R, G, B): 8-bit integer (0-255), sets the primary color of the displays.   
-> Inputs(qtyToRandomize): Number of displays in the chain to randomize.
-> Inputs(,...): The index of the displays you wish to randomize.
+> Inputs(qtyToRandomize): Number of displays in the chain to randomize.  
+> Inputs(,...): The index of the displays you wish to randomize.  
 > If iterations is 1, delay and acceleration aren't important, as the given displays will simply output a random panel. Otherwise, this function provides a simple animation to your chain.  
 
 
