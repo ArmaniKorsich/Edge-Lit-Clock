@@ -25,3 +25,7 @@ The off order resembles the old Nixie tube number ordering meant to maximize vis
 
 Using the Atmega328p reading unix time from a DS32321 time-keeping IC.  
 To protect the information against power outages, the project uses a readily available DS3231 breakout board with CR2032 3.0v coin battery.
+
+## Circuitry
+
+![Front Render](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/Schemtic.png)
