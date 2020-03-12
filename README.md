@@ -47,15 +47,13 @@ RTClib: Interfaces with the DS3231 Real Time Clock, functions for timekeeping.
 ## eLite
 
 `uint8_t defineChain(uint8_t numDisplays,...);`
-
 > Inputs(NumDisplays): Number of chained displays in the system.
 
 `void defineLedPerPanel(uint8_t led,...);`
-
-Inputs(led): How many displays there are
-Inputs(,...): The number of leds per panel in a display, seperated by commas.
-Tells the system how many LEDs each display has. Useful with physically large plexiglass panels that need more lighting.
-For a system with 5 displays and 2 leds per panel on each display:
+> Inputs(led): How many displays there are
+> Inputs(,...): The number of leds per panel in a display, seperated by commas.
+> Tells the system how many LEDs each display has. Useful with physically large plexiglass panels that need more lighting.
+> For a system with 5 displays and 2 leds per panel on each display:
 `void defineLedPerPanel(5, 2, 2, 2, 2, 2)`
 
 `void setStandardOrder(uint8_t displayToConfigure);`
