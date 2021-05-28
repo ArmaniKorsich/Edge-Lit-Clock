@@ -51,7 +51,7 @@ and the provided eLite library for controlling the displays.
 
 ResponsiveAnalogRead: Provides fast and mathematically continuous input values. Minimizes noise in low-cost potentiometers.
 
-stdio: Optional, provides useful debugging information in Arduino.
+stdio: Optional, provides useful debugging information in Arduino IDE.
 
 FastLED: A solution to controlling a large quantity of LEDs rapidly and arbitrarily.
 
