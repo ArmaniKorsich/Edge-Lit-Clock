@@ -34,6 +34,8 @@ To protect time information against power outages, I selected a DS3231 which acc
 
 The circuit was constructed on one 2 layer circuit board manufactured by JLCPCB and designed using Autodesk Eagle.
 
+![Circuit Board](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/pcbView.png)
+
 ### Input
 
 The device takes 9-40VDC input with at least 2A current capacity. The LM2575-5V buck converter transforms the input to 5V with a 3A limit.
