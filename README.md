@@ -54,6 +54,20 @@ The three potentiometers on the device control the RED, GREEN, and BLUE color ch
 
 Pressing the Photoresist_Set button will toggle tracking ambient brightness. When set, the device will lower the brightness of its LEDs to 20% in a fully dark room.
 
+### Setting a Timer
+
+To set a timer, press the TIMER+ or TIMER- button until the device displays the appropriate countdown time.
+
+To start the timer, pres the TIMER_SET button. The device will begin counting down from the set time.
+
+For countdowns over 30 minutes, the device will display hours on the 2 left displays, and minutes on the 2 right displays.
+
+When the countdown reaches <30 minutes, the device will display minutes on the 2 left displays, and seconds on the 2 right displays.
+
+When the countdown reaches 0 seconds, a buzzer will beep.
+
+To disable the buzzing, press the SNOOZE button or restart the device.
+
 ## Schematics
 
 ![Front Render](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/Schematic.png)
