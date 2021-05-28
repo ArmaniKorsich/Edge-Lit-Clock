@@ -46,9 +46,9 @@ The average current draw of the Edge Lit CLock is ~350 mA with an average of 16 
 
 ### Operation
 
-To turn the device on, set the 'POWER' piano switch on the bottom right of the PCB to the UP position.
+To turn the device on, set the 'POWERTOGGLE' piano switch on the bottom right of the PCB to the 'DOWN' position.
 
-To turn the alarm on, set the 'ALARM_SET' piano switch to the UP position.
+To turn the alarm on, set the 'ALARMTOGGLE' piano switch to the 'DOWN' position.
 
 The three potentiometers on the device control the RED, GREEN, and BLUE color channels of the LEDs.
 
