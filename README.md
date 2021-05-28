@@ -23,10 +23,23 @@ The off order resembles the old Nixie tube number ordering meant to maximize vis
 \* *The last display has various symbols instead:*  
 ![alpha Symbols](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/AlphaChar.png)
 
-Using the Atmega328p reading unix time from a DS32321 time-keeping IC.  
-To protect the information against power outages, the project uses a readily available DS3231 breakout board with CR2032 3.0v coin battery.
+## Electronics
 
-## Circuitry
+The Atmega328p drives the WS2812B leds using the eLite and FastLED libraries.
+
+The Atmega328p reads time from a DS32321 RTC.  
+
+To protect time information against power outages, I selected a DS3231 which accepts backup battery voltage on PIN14 in the event that VCC cuts out.
+
+The circuit was constructed on one 2 layer circuit board manufactured by JLCPCB and designed using Autodesk Eagle.
+
+### Input
+
+The device takes 9-40V input with at least 2A current capacity. The LM2575-5V buck converter transforms the input to 5V with a 3A limit.
+
+The average current draw of the Edge Lit CLock is ~350 mA with an average of 16 WS2812B activated at any moment.
+
+## Schematics
 
 ![Front Render](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/Schematic.png)
 
