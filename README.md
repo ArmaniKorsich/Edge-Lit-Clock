@@ -32,7 +32,8 @@ The Atmega328p reads time from a DS32321 RTC.
 
 To protect time information against power outages, I selected a DS3231 which accepts backup battery voltage on PIN14 in the event that VCC cuts out.
 
-The circuit was constructed on one 2 layer circuit board manufactured by JLCPCB and designed using Autodesk Eagle.
+All circuit boards were constructed on 2 layer PCBs.
+The circuit boards were manufactured by JLCPCB and designed using Autodesk Eagle.
 
 ![Circuit Board](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/pcbView.png)
 
