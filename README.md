@@ -52,7 +52,7 @@ To turn the alarm on, set the 'ALARMTOGGLE' piano switch to the 'DOWN' position.
 
 The three potentiometers on the device control the RED, GREEN, and BLUE color channels of the LEDs.
 
-Pressing the Photoresist_Set button will toggle tracking ambient brightness. When set, the device will lower the brightness of its LEDs to 20% in a fully d ark room.
+Pressing the Photoresist_Set button will toggle tracking ambient brightness. When set, the device will lower the brightness of its LEDs to 20% in a fully dark room.
 
 ## Schematics
 
