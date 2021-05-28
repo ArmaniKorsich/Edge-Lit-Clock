@@ -44,6 +44,10 @@ The device takes 9-40VDC input with at least 2A current capacity. The LM2575-5V 
 
 The average current draw of the Edge Lit CLock is ~350 mA with an average of 16 WS2812B activated at any moment.
 
+### Operation
+
+The three potentiometer on the device control the Red, Green, and Blue color channels of the LEDs.
+
 ## Schematics
 
 ![Front Render](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/Schematic.png)
