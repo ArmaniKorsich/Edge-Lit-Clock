@@ -36,6 +36,7 @@ All circuit boards were constructed on 2 layer PCBs.
 The circuit boards were manufactured by JLCPCB and designed using Autodesk Eagle.
 
 ![Circuit Board](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/pcbView.png)
+![LED Board](https://github.com/ArmaniKorsich/Edge-Lit-Clock/blob/master/Images/ledView.png)
 
 ### Input
 
