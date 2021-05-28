@@ -35,7 +35,7 @@ The circuit was constructed on one 2 layer circuit board manufactured by JLCPCB 
 
 ### Input
 
-The device takes 9-40V input with at least 2A current capacity. The LM2575-5V buck converter transforms the input to 5V with a 3A limit.
+The device takes 9-40VDC input with at least 2A current capacity. The LM2575-5V buck converter transforms the input to 5V with a 3A limit.
 
 The average current draw of the Edge Lit CLock is ~350 mA with an average of 16 WS2812B activated at any moment.
 
